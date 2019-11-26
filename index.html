@@ -48,11 +48,14 @@
 
     p {
       text-align: justify;
+      /* text-indent: 50px; */
+
     }
 
     a {
       color: #607cc3;
       text-decoration: none;
+
     }
 
     #wrapper {
@@ -84,6 +87,11 @@
       padding-bottom: 2%;
     }
 
+    #indent {
+      text-indent: 50px;
+
+    }
+
     .social {
       float: right;
       list-style-type: none;
@@ -107,9 +115,11 @@
     .button-holder {
       float: right;
       margin: 0 2% 4% 0;
+      text-decoration: none;
+
     }
 
-    .btn {
+    a.btn {
       float: right;
       background: #303840;
       color: #f6faff;
@@ -119,8 +129,14 @@
       border-radius: 8px;
     }
 
-    .btn:hover {
+    a.btn:hover {
       background: #58585A;
+      text-decoration: none;
+
+    }
+
+    a.btn:visited a.btn:active {
+      color: inherit;
     }
 
     .line {
@@ -178,7 +194,8 @@
 
     <div class="one-col">
       <h1>EMAIL TEMPLATE TITLE</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident deserunt accusamus laudantium at, aut
+      <p id="indent"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident deserunt accusamus
+        laudantium at, aut
         ea corporis cumque perspiciatis adipisci nam eligendi officia similique excepturi, nesciunt, qui voluptatibus
         placeat. Repellat!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident deserunt accusamus laudantium at, aut
