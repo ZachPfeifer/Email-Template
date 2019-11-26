@@ -13,15 +13,153 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Awesome fonts Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
-<!-- MY CSS -->
-<link rel="stylesheet" href="">
+  <!-- MY CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800&display=swap');
+
+    * {
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Catamaran', sans-serif;
+      background-color: #d8dbdb;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2%;
+      color: #565859;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    header {
+      width: 98%;
+    }
+
+
+    h1 {
+      letter-spacing: 1%;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    a {
+      color: #607cc3;
+      text-decoration: none;
+    }
+
+    #wrapper {
+      background-color: #f6faff;
+    }
+
+    #logo {
+      max-width: 220px;
+      margin: 2% 0% 0% 5%;
+      float: left;
+    }
+
+    #callout {
+      margin: 14% 3% 2% 0;
+      float: right;
+
+    }
+
+    #banner-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 50%; */
+    }
+
+    #legal {
+      text-align: center;
+      size: 10px;
+      padding-bottom: 2%;
+    }
+
+    .social {
+      float: right;
+      list-style-type: none;
+      margin-top: 8%;
+    }
+
+    .social li {
+      display: inline;
+    }
+
+    .banner {
+      margin-bottom: 3%;
+      width: 100%;
+      align-content: center;
+    }
+
+    .one-col {
+      padding: 2%;
+    }
+
+    .button-holder {
+      float: right;
+      margin: 0 2% 4% 0;
+    }
+
+    .btn {
+      float: right;
+      background: #303840;
+      color: #f6faff;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #58585A;
+    }
+
+    .line {
+      clear: both;
+      height: 3px;
+      background-color: #e3e9e9;
+      margin: 4% auto;
+      width: 96%;
+    }
+
+    .two-col {
+      float: left;
+      width: 46%;
+      padding: 2%;
+      margin: 2%;
+    }
+
+    .contact {
+      text-align: center;
+      /* padding-bottom: 3%; */
+    }
+
+    @media (max-width: 600px) {
+      .two-col {
+        width: 97%;
+
+      }
+    }
+  </style>
+
+
 </head>
 
 <body>
   <div id="wrapper">
     <header>
-      <div class="logo">
-        <img src="https://www.macintuts.com/wp-content/uploads/macintuts-green.png" alt="Logo">
+      <div id="logo">
+        <img src="https://dcassetcdn.com/design_img/3096767/681086/681086_17136101_3096767_2dbcc4ed_image.png"
+          alt="Logo">
       </div>
       <div id="callout">
         <ul class="social">
@@ -29,13 +167,13 @@
           <li><i class="fab fa-instagram"></i></li>
           <li><i class="fab fa-twitter-square"></i></li>
           <li><i class="fab fa-youtube"></i></li>
-
           </li>
         </ul>
       </div>
     </header>
     <div class="banner">
-      <img src="" alt="">
+      <img id="banner-img"
+        src="https://static.makeuseof.com/wp-content/uploads/2017/06/Excel-Send-Email-Featured-670x335.jpg" alt="">
     </div>
 
     <div class="one-col">
@@ -50,7 +188,7 @@
         ea corporis cumque perspiciatis adipisci nam eligendi officia similique excepturi, nesciunt, qui voluptatibus
         placeat. Repellat!</p>
       <div class="button-holder">
-        <a class="btn" href="#" target="_blank"></a>
+        <a class="btn" href="#" target="_blank">Learn More...</a>
       </div>
     </div>
 
@@ -58,7 +196,7 @@
 
     <div class="two-col">
       <h2>Latest Video Release</h2>
-      <img src="" alt="">
+      <img src="https://kinsta.com/wp-content/uploads/2018/04/transactional-email.png" alt="">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia enim deserunt dolorem. Voluptatem laudantium
         recusandae voluptatum dignissimos beatae at, asperiores consequuntur nisi nam aut, nesciunt assumenda distinctio
         voluptas, officiis mollitia.</p>
@@ -67,7 +205,7 @@
 
     <div class="two-col">
       <h2>Latest Video Release</h2>
-      <img src="" alt="">
+      <img src="https://kinsta.com/wp-content/uploads/2018/04/transactional-email.png" alt="">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia enim deserunt dolorem. Voluptatem laudantium
         recusandae voluptatum dignissimos beatae at, asperiores consequuntur nisi nam aut, nesciunt assumenda distinctio
         voluptas, officiis mollitia.</p>
@@ -80,9 +218,13 @@
       <- Insert Company Name Here -> <br>
         (###) ###-#### <br>
         <- Insert Address Here -> <br>
-          <- Insert Email Adress Here ->
+          <- Insert Email Adress Here -><br>
     </p>
 
+    <div class="line"></div>
+
+    <p id="legal"><small>© 2019 Twitch. All Rights Reserved.
+        350 Bush Street, 2nd Floor, San Francisco, CA, 94104 - USA</p></small>
   </div><!-- END OF WRAPPER -->
 </body>
 
